@@ -2,10 +2,19 @@ import Foundation
 
 class TripService
 {
+    var userSession: UserSessionProtocol = UserSession.sharedInstance
+    var tripDAO: TripDAOProtocol = TripDAO()
+    
+    // Violate Dependency Inversion rule
+    // High level trip level class depend on no abstraction but low level details
+    
+    // Violate object calisthenics rules.
+    // - more than one level of indentation
+    // - use else block
     func getTripsByUser(_ user:User) throws -> [Trip]?
     {
         var tripList:[Trip]? = nil
-        let loggedUser = try! UserSession.sharedInstance.getLoggedUser()
+        let loggedUser = try! userSession.getLoggedUser()
         
         var isFriend = false
         
@@ -17,7 +26,7 @@ class TripService
                 }
             }
             if isFriend {
-                tripList = try! TripDAO.findTripsByUser(user)
+                tripList = try! tripDAO.findTripsByUser(user)
             }
             return tripList
         }

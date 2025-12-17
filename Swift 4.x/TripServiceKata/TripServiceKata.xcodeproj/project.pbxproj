@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		C1C9FA892EF296DF0086452D /* MockUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9FA882EF296DB0086452D /* MockUserSession.swift */; };
+		C1C9FA8B2EF29C7D0086452D /* MockTripDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C9FA8A2EF29C790086452D /* MockTripDAO.swift */; };
 		OBJ_26 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_32 /* TripServiceKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* TripServiceKataTests.swift */; };
 		OBJ_34 /* TripServiceKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TripServiceKata::TripServiceKata::Product" /* TripServiceKata.framework */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1C9FA882EF296DB0086452D /* MockUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserSession.swift; sourceTree = "<group>"; };
+		C1C9FA8A2EF29C790086452D /* MockTripDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTripDAO.swift; sourceTree = "<group>"; };
 		OBJ_10 /* TripDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDAO.swift; sourceTree = "<group>"; };
 		OBJ_11 /* TripService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripService.swift; sourceTree = "<group>"; };
 		OBJ_12 /* TripServiceKataErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripServiceKataErrorType.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		OBJ_16 /* TripServiceKataTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1C9FA8A2EF29C790086452D /* MockTripDAO.swift */,
+				C1C9FA882EF296DB0086452D /* MockUserSession.swift */,
 				OBJ_17 /* TripServiceKataTests.swift */,
 			);
 			name = TripServiceKataTests;
@@ -107,7 +113,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -115,7 +121,6 @@
 				OBJ_15 /* Tests */,
 				OBJ_18 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -203,9 +208,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +238,8 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_32 /* TripServiceKataTests.swift in Sources */,
+				C1C9FA8B2EF29C7D0086452D /* MockTripDAO.swift in Sources */,
+				C1C9FA892EF296DF0086452D /* MockUserSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
